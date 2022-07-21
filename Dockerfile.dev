@@ -1,0 +1,8 @@
+FROM node:16
+
+RUN npm i -g nodemon
+RUN mkdir -p /app
+
+WORKDIR /app
+
+CMD ["nodemon", "src/index.js"]

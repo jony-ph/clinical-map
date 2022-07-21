@@ -1,0 +1,24 @@
+{
+  "name": "clinical-map",
+  "version": "1.0.0",
+  "description": "API to obtain research data about COVID-19",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "API",
+    "COVID-19",
+    "research"
+  ],
+  "author": "Necios",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
