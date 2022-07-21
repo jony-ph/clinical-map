@@ -1,13 +1,16 @@
 version: "3.9"
 services:
   web:
-    container_name: webapp
-    build: .
+    container_name: apiapp
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
     ports:
       - "4000:4000"
     links:
       - node
-    image: testcomposer.azurecr.io/test:latest
+    volumes:
+      - .:/app
   node:
     container_name: node
-    image: testcomposer.azurecr.io/node:16
+    image: node:16-alpine3.15
