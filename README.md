@@ -1,4 +1,4 @@
-# Clinical Map API
+# Clinical Map API 🔍️
 
 Clinical Map API es una API pública para obtener datos sobre estudios e
 investigaciones científicas que se han realizado al rededor del mundo
@@ -32,7 +32,7 @@ Algunos de los endpoints necesitan de un argumento o parámetro para poder funci
 
 Obtener todos los estudios almacenados en la base de datos
 
-  https://clinicalmapapi.azurewebsites.net/api/all
+  	https://clinicalmapapi.azurewebsites.net/api/all
 
 ##### País
 
