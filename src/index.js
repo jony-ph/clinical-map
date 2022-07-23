@@ -11,8 +11,9 @@ import handleErrors from '../middleware/handleErrors.js'
 
 const app = express()
 
-// Main
 app.use(cors())
+
+// Main
 app.use('/', routerIndex)
 app.use('/api', routerAPI)
 app.use('/documentation', routerDocumentation)
