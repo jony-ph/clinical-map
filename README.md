@@ -8,7 +8,7 @@ disponibles para que puedas utilizarlos en tus desarrollos.
 Puedes consumir esta API facilmente utilizando fetch con JavaScript
 
 ```javascript
-const url = 'https://clinicalmapapi.azurewebsites.net/api'
+const url = 'https://clinical-map-api.herokuapp.com/api'
 
 fetch(url)
 	.then( response => response.json() )
@@ -32,32 +32,32 @@ Algunos de los endpoints necesitan de un argumento o parámetro para poder funci
 
 Obtener todos los estudios almacenados en la base de datos
 
-  	https://clinicalmapapi.azurewebsites.net/api/all
+  https://clinical-map-api.herokuapp.com/api/all
 
 ##### País
 
 Obtiene todos los estudios realizados en un país en específico
 
-	https://clinicalmapapi.azurewebsites.net/api/country/:pais
+	https://clinical-map-api.herokuapp.com/api/country/:pais
 
 ##### Fecha de registro
 
 Obtener todos los estudios de una fecha de registro en específico. La fecha de registro debe tener el formato YYMMDD sin espacios, ni guiones.
 
-	https://clinicalmapapi.azurewebsites.net/api/registration/:date
+	https://clinical-map-api.herokuapp.com/api/registration/:date
 
 ##### Estudio específico
 
 Obtiene el estudio del trialID que se especifique, El trialID es el identificador único de cada registro.
 
-	https://clinicalmapapi.azurewebsites.net/api/trial/:trialID
+	https://clinical-map-api.herokuapp.com/api/trial/:trialID
 
 ### Consultas rápidas
 
 Las consultas rápidas entregan información con datos que creemos puedan ser más relevantes para el usuario. Las consultas rápidas pueden ser llamas de igual manera que las vistas anteriormente, Parámetros debemos agregar la subcarpeta \"/r/\" antes de especificar l parámetro. Ejemplo de consulta de un consulta de un registro en específico, con la información más relevante:
 
 ```javascript
-const url = 'https://clinicalmapapi.azurewebsites.net/api/trial/r/NCT00173563'
+const url = 'https://clinical-map-api.herokuapp.com/api/trial/r/NCT00173563'
 
 fetch(url)
 	.then( response => response.json() )
