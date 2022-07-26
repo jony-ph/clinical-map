@@ -42,7 +42,7 @@
     <pre>
       <code class="language-javascript">
 
-        const url = 'https://clinicalmapapi.azurewebsites.net/api'
+        const url = 'https://clinical-map-api.herokuapp.com/api'
 
         fetch(url)
           .then( response => response.json() )
@@ -70,7 +70,7 @@
     <p>Obtener todos los estudios almacenados en la base de datos</p>
     <pre>
       <code class="text-center">
-        https://clinicalmapapi.azurewebsites.net/api/all
+        https://clinical-map-api.herokuapp.com/api/all
       </code>
     </pre>
 
@@ -78,7 +78,7 @@
     <p>Obtiene todos los estudios realizados en un país en específico</p>
     <pre>
       <code class="text-center">
-        https://clinicalmapapi.azurewebsites.net/api/country/:pais
+        https://clinical-map-api.herokuapp.com/api/country/:pais
       </code>
     </pre>
     
@@ -86,7 +86,7 @@
     <p>Obtener todos los estudios de una fecha de registro en específico. La fecha de registro debe tener el formato YYMMDD sin espacios, ni guiones.</p>
     <pre>
       <code class="text-center">
-        https://clinicalmapapi.azurewebsites.net/api/registration/:date<fecha>
+        https://clinical-map-api.herokuapp.com/api/registration/:date<fecha>
       </code>
     </pre>
 
@@ -94,7 +94,7 @@
     <p>Obtiene el estudio del trialID que se especifique, El trialID es el identificador único de cada registro.</p>
     <pre>
       <code class="text-center">
-        https://clinicalmapapi.azurewebsites.net/api/trial/:trialID
+        https://clinical-map-api.herokuapp.com/api/trial/:trialID
       </code>
     </pre>
 
@@ -109,7 +109,7 @@
     <pre>
       <code class="language-javascript">
 
-        const url = 'https://clinicalmapapi.azurewebsites.net/api/trial/r/NCT00173563'
+        const url = 'https://clinical-map-api.herokuapp.com/api/trial/r/NCT00173563'
 
         fetch(url)
           .then( response => response.json() )
